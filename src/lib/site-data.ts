@@ -1,0 +1,196 @@
+/**
+ * Single source of truth for all site content — ZAIN REAL ESTATE, Sukkur.
+ */
+
+export const img = {
+  logo: "/zain-logo.png",
+
+  spanishVilla: "/homes/hero-spanish.jpg",
+  luxuryVilla: "/homes/hero-villa.jpg",
+  luxuryHouse: "/homes/hero-luxury.jpg",
+  courtyard: "/homes/hero-courtyard.jpg",
+
+  modernVilla: "/homes/home-1.jpg",
+  classicMansion: "/homes/home-2.jpg",
+  greyClassic: "/homes/home-3.jpg",
+  completedVilla: "/homes/home-4.jpg",
+  brickFront: "/homes/home-5.jpg",
+};
+
+export const showreelUrl = "/video/showreel.mp4";
+
+export const site = {
+  name: "Zain Real Estate",
+  short: "Zain",
+  fullName: "Zain Real Estate — Consultant & Marketing, Sukkur",
+  tagline: "Consultant & Marketing",
+  owner: "Hizb Ullah Abro",
+  logo: img.logo,
+  address: "B-52, Delhi Muslim Society, Near Sukkur IBA University, Sukkur, Pakistan",
+  addressShort: "Delhi Muslim Society, Sukkur",
+  email: "zainrealestate.sukkur@gmail.com",
+  phone: "0313-5974923",
+  phoneTel: "+923135974923",
+  facebook: "https://facebook.com/",
+  instagram: "https://instagram.com/",
+  youtube: "https://youtube.com/",
+  maps: "https://maps.google.com/?q=Delhi+Muslim+Society+Near+Sukkur+IBA+University+Sukkur",
+  whatsapp:
+    "https://wa.me/923135974923?text=Hello%20Zain%20Real%20Estate%2C%20I%20am%20interested%20in%20a%20property%20in%20Sukkur.",
+  hours: [
+    { day: "Monday to Saturday", time: "10:00 AM to 7:00 PM" },
+    { day: "Sunday", time: "By appointment" },
+  ],
+};
+
+export const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/services", label: "Services" },
+  { to: "/projects", label: "Properties" },
+  { to: "/contact", label: "Contact" },
+];
+
+export const highlights = [
+  { icon: "🏡", label: "New Projects Booking" },
+  { icon: "🏠", label: "Sale & Purchase" },
+  { icon: "🔑", label: "Rent" },
+];
+
+export const heroSlides = [
+  {
+    title: "Deals in All Kinds of Property in Sukkur",
+    highlight:
+      "Plots, houses, flats, shops and commercial buildings — bought, sold and rented with honest guidance.",
+    image: img.luxuryVilla,
+  },
+  {
+    title: "New project bookings, sale, purchase & rent",
+    highlight: "Priority booking in Sukkur's best upcoming housing societies and commercial projects.",
+    image: img.spanishVilla,
+  },
+  {
+    title: "Your trusted property partner in Sukkur",
+    highlight: "Led by Hizb Ullah Abro — full documentation support from booking to registry.",
+    image: img.luxuryHouse,
+  },
+];
+
+export const stats = [
+  { value: "100%", label: "Documentation support" },
+  { value: "4", label: "Core services" },
+  { value: "1", label: "Trusted local name" },
+];
+
+export const about = {
+  heading: "Your Trusted Property Partner in Sukkur",
+  paragraphs: [
+    "Zain Real Estate is a leading real estate consultancy and marketing firm based in Sukkur.",
+    "Led by Hizb Ullah Abro, we specialize in New Projects Booking, Sale, Purchase & Rent of all kinds of residential and commercial property.",
+    "With deep local market knowledge and a commitment to transparency, we help buyers, sellers, and investors make the right property decisions.",
+  ],
+};
+
+export const services = [
+  {
+    slug: "new-projects",
+    title: "New Project Bookings",
+    image: img.luxuryHouse,
+    short: "Priority booking in the best upcoming housing societies and commercial projects in Sukkur.",
+    body: "Get priority booking in the best upcoming housing societies and commercial projects in Sukkur.",
+  },
+  {
+    slug: "sale-purchase",
+    title: "Property Sale & Purchase",
+    image: img.brickFront,
+    short: "Plots, Houses, Flats, Shops and Commercial Buildings across Sukkur.",
+    body: "We deal in Plots, Houses, Flats, Shops, and Commercial Buildings across Sukkur.",
+  },
+  {
+    slug: "rent",
+    title: "Rental Services",
+    image: img.greyClassic,
+    short: "Find your ideal home, office or shop on rent in prime locations.",
+    body: "Find your ideal home, office, or shop on rent in prime locations.",
+  },
+  {
+    slug: "marketing",
+    title: "Property Marketing & Consultation",
+    image: img.classicMansion,
+    short: "Selling your property? We market it to the right buyers.",
+    body: "Selling your property? We market it to the right buyers. Buying property? We guide you to the best investment.",
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: "Local Expertise",
+    body: "Deep knowledge of Sukkur's property market including IBA University area, Delhi Muslim Society and 100 Ft Road.",
+  },
+  {
+    title: "All Property Types",
+    body: "Residential, Commercial, Plots and Projects — all under one roof.",
+  },
+  {
+    title: "Trusted Name",
+    body: "Hizb Ullah Abro — honest deals and full documentation support.",
+  },
+  {
+    title: "One-Stop Solution",
+    body: "From booking to registry, we handle everything for you.",
+  },
+];
+
+/** Branded social posts — shown full-frame, never cropped. */
+export const posts = [
+  { image: "/posts/post-1.jpg", title: "New Project Booking", location: "Sukkur", tag: "Open" },
+  { image: "/posts/post-2.jpg", title: "Residential Plots", location: "Sukkur", tag: "Available" },
+  { image: "/posts/post-4.jpg", title: "Commercial Shops", location: "Sukkur", tag: "For Sale" },
+  { image: "/posts/post-8.jpg", title: "Houses on Rent", location: "Sukkur", tag: "For Rent" },
+];
+
+export const testimonials = [
+  {
+    name: "Imran Shaikh",
+    role: "Buyer · Delhi Muslim Society, Sukkur",
+    quote: "Zain Real Estate handled my plot purchase and complete registry paperwork without any hassle.",
+  },
+  {
+    name: "Nadia Memon",
+    role: "Tenant · Near Sukkur IBA University",
+    quote: "They found us a house on rent in two days, exactly in the area and budget we asked for.",
+  },
+  {
+    name: "Asif Abro",
+    role: "Investor · Sukkur",
+    quote: "Honest advice on which new project to book. Hizb Ullah bhai guided every step clearly.",
+  },
+];
+
+export const registrations = [
+  "Sukkur",
+  "New Projects Booking",
+  "Sale & Purchase",
+  "Rent",
+  "Property Marketing",
+  "Consultation",
+];
+
+export const process = [
+  { step: "01", title: "Consultation", body: "Tell us your budget, area and property type — on call or WhatsApp." },
+  { step: "02", title: "Shortlist", body: "We shortlist verified options across Sukkur that match your needs." },
+  { step: "03", title: "Visit & Deal", body: "Site visits, price negotiation and a transparent agreement." },
+  { step: "04", title: "Registry", body: "Full documentation support right through to registry and handover." },
+];
+
+export const galleryImages = [
+  img.luxuryVilla,
+  img.spanishVilla,
+  img.luxuryHouse,
+  img.courtyard,
+  img.modernVilla,
+  img.classicMansion,
+  img.greyClassic,
+  img.completedVilla,
+  img.brickFront,
+];
