@@ -2,9 +2,6 @@
  * Single source of truth for all site content — ZAIN REAL ESTATE, Sukkur.
  */
 
-import brandOffice from "@/assets/zain-brand-office.jpg.asset.json";
-import houseForSale from "@/assets/zain-house-for-sale.jpg.asset.json";
-import plotCmt2 from "@/assets/zain-plot-cmt2.jpg.asset.json";
 import bungalowMehran from "@/assets/bungalow-mehran.jpg.asset.json";
 
 export { bungalowMehran };
@@ -174,9 +171,9 @@ export const whyChooseUs = [
 
 /** Branded social posts — shown full-frame, never cropped. */
 export const posts = [
-  { image: brandOffice.url, title: "Buy · Sell · Invest · Consult", location: "Sukkur, Pakistan", tag: "Zain Real Estate" },
-  { image: houseForSale.url, title: "Double Storey House For Sale", location: "Near Main Road, Sukkur", tag: "For Sale" },
-  { image: plotCmt2.url, title: "Plot For Sale — CMT2 Sukkur", location: "CMT2, Sukkur", tag: "For Sale" },
+  { image: "/posts/post-1.jpeg", title: "Buy · Sell · Invest · Consult", location: "Sukkur, Pakistan", tag: "Zain Real Estate" },
+  { image: "/posts/post-2.jpeg", title: "Double Storey House For Sale", location: "Near Main Road, Sukkur", tag: "For Sale" },
+  { image: "/posts/post-3.jpeg", title: "Plot For Sale — CMT2 Sukkur", location: "CMT2, Sukkur", tag: "For Sale" },
 ];
 
 
