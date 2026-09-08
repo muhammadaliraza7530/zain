@@ -176,6 +176,54 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Full Urdu message */}
+      <section className="relative overflow-hidden border-y border-border bg-card/40 py-20 lg:py-28">
+        <div className="grid-backdrop pointer-events-none absolute inset-0 opacity-50" />
+        <div className="relative mx-auto max-w-4xl px-5 lg:px-8">
+          <Reveal>
+            <p className="text-center text-[10px] font-bold uppercase tracking-[0.35em] text-primary sm:text-xs">
+              ہمارا وعدہ
+            </p>
+            <h2 dir="rtl" className="mt-4 text-center text-2xl font-extrabold leading-snug sm:text-3xl lg:text-4xl">
+              {partyDeal.titleUrdu}
+            </h2>
+            <p dir="rtl" className="mx-auto mt-6 max-w-2xl text-center text-base leading-loose sm:text-lg">
+              اگر کسی دوست کو سکھر میں پراپرٹی خریدنی یا فروخت کرنی ہو تو ہم سے رابطہ کریں۔
+            </p>
+          </Reveal>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {[
+              { icon: "🤝", text: "صاف، شفاف اور اعتماد کے ساتھ ڈیل" },
+              { icon: "📍", text: "مناسب پراپرٹی اور بہتر مواقع" },
+              { icon: "💼", text: "Party-to-Party Deal" },
+              { icon: "📞", text: "رابطہ کریں: Zain Real Estate — 0313-5974923" },
+            ].map((p, i) => (
+              <Reveal key={p.text} delay={(i % 2) * 90}>
+                <div className="flex h-full items-center gap-4 rounded-3xl border border-border bg-background/60 p-6">
+                  <span aria-hidden className="text-2xl">
+                    {p.icon}
+                  </span>
+                  <p dir="rtl" className="text-sm font-bold sm:text-base">
+                    {p.text}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal className="mt-12 text-center">
+            <p dir="rtl" className="text-xl font-extrabold text-primary sm:text-2xl">
+              {partyDeal.closingUrdu}
+            </p>
+            <p dir="rtl" className="mt-2 text-sm font-semibold text-muted-foreground">
+              🤝 {partyDeal.dealingUrdu}
+            </p>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Property Buy · Sell · Investment — Sukkur, Pakistan
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* Stats */}
       <section className="border-y border-border bg-card/40 py-14">

@@ -18,6 +18,7 @@ import { Reveal, SectionHeading } from "@/components/ui-bits";
 import { AutoScroller } from "@/components/AutoScroller";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { TestimonialsRail } from "@/components/Testimonials";
+import { PostsRail } from "@/components/PostsRail";
 import { CtaBand } from "@/components/PageBits";
 
 export const Route = createFileRoute("/")({
@@ -223,6 +224,12 @@ function HomePage() {
                 </li>
               ))}
             </ul>
+            <p dir="rtl" className="mt-8 text-lg font-extrabold text-primary sm:text-xl">
+              {partyDeal.closingUrdu}
+            </p>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Property Buy · Sell · Investment — {partyDeal.dealingUrdu}
+            </p>
             <a
               href={site.whatsapp}
               target="_blank"
@@ -336,6 +343,20 @@ function HomePage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Latest posts */}
+      <section className="border-t border-border bg-card/30 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <SectionHeading
+            eyebrow="Latest updates"
+            title="Fresh from Zain Real Estate"
+            intro="New listings, project launches and deals — straight from our page."
+          />
+        </div>
+        <div className="mt-12">
+          <PostsRail />
         </div>
       </section>
 

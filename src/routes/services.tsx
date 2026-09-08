@@ -143,6 +143,14 @@ function ServicesPage() {
               </Reveal>
             ))}
           </div>
+          <Reveal className="mt-12">
+            <p dir="rtl" className="text-xl font-extrabold text-primary sm:text-2xl">
+              {partyDeal.closingUrdu}
+            </p>
+            <p dir="rtl" className="mt-2 text-sm font-semibold text-muted-foreground">
+              🤝 {partyDeal.dealingUrdu}
+            </p>
+          </Reveal>
         </div>
       </section>
 

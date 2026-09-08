@@ -5,6 +5,9 @@
 import brandOffice from "@/assets/zain-brand-office.jpg.asset.json";
 import houseForSale from "@/assets/zain-house-for-sale.jpg.asset.json";
 import plotCmt2 from "@/assets/zain-plot-cmt2.jpg.asset.json";
+import bungalowMehran from "@/assets/bungalow-mehran.jpg.asset.json";
+
+export { bungalowMehran };
 
 
 export const img = {
@@ -108,6 +111,8 @@ export const partyDeal = {
     "اگر کسی دوست کو سکھر میں پراپرٹی خریدنی یا فروخت کرنی ہو تو ہم سے رابطہ کریں۔ آپ کی پراپرٹی، ہماری ذمہ داری!",
   intro:
     "If you or a friend needs to buy or sell property in Sukkur, talk to us first. Your property is our responsibility.",
+  closingUrdu: "آپ کی پراپرٹی، ہماری ذمہ داری!",
+  dealingUrdu: "صاف، شفاف اور پروفیشنل ڈیلنگ",
   points: [
     { icon: "🤝", urdu: "صاف، شفاف اور اعتماد کے ساتھ ڈیل", en: "Clear, transparent dealing built on trust" },
     { icon: "📍", urdu: "مناسب پراپرٹی اور بہتر مواقع", en: "The right property and better opportunities" },
@@ -172,10 +177,6 @@ export const posts = [
   { image: brandOffice.url, title: "Buy · Sell · Invest · Consult", location: "Sukkur, Pakistan", tag: "Zain Real Estate" },
   { image: houseForSale.url, title: "Double Storey House For Sale", location: "Near Main Road, Sukkur", tag: "For Sale" },
   { image: plotCmt2.url, title: "Plot For Sale — CMT2 Sukkur", location: "CMT2, Sukkur", tag: "For Sale" },
-  { image: "/posts/post-1.jpg", title: "New Project Booking", location: "Sukkur", tag: "Open" },
-  { image: "/posts/post-2.jpg", title: "Residential Plots", location: "Sukkur", tag: "Available" },
-  { image: "/posts/post-4.jpg", title: "Commercial Shops", location: "Sukkur", tag: "For Sale" },
-  { image: "/posts/post-8.jpg", title: "Houses on Rent", location: "Sukkur", tag: "For Rent" },
 ];
 
 
@@ -236,6 +237,8 @@ export type Listing = {
   image: string;
   gallery: string[];
   features: string[];
+  featuresUrdu?: string[];
+  descriptionUrdu?: string;
   description: string;
 };
 
@@ -248,8 +251,8 @@ export const listings: Listing[] = [
     location: "Mehran Society, Sukkur",
     area: "400 sq yd",
     price: "Demand: 7 Crore",
-    image: img.courtyard,
-    gallery: [img.courtyard, img.luxuryHouse, img.completedVilla],
+    image: bungalowMehran.url,
+    gallery: [bungalowMehran.url, img.courtyard, img.luxuryHouse, img.completedVilla],
     features: [
       "Plot size 400 sq yd",
       "9 bedrooms",
@@ -259,6 +262,18 @@ export const listings: Listing[] = [
       "Spacious residential property, ideal for a large family",
       "Demand: 7 Crore — serious buyers only",
     ],
+    featuresUrdu: [
+      "پلاٹ سائز: 400 گز",
+      "بیڈرومز: 09",
+      "ڈرائنگ روم 1 + ٹی وی لاؤنج 2",
+      "کچن 2",
+      "کار پارکنگ",
+      "کشادہ رہائشی پراپرٹی",
+      "بڑی فیملی کے لیے بہترین",
+      "ڈیمانڈ: 7 کروڑ — صرف Serious Buyers رابطہ کریں",
+    ],
+    descriptionUrdu:
+      "سکھر میں بڑی فیملی کے لیے خوبصورت، کشادہ اور شاندار بنگلہ فروخت کے لیے دستیاب ہے۔ پراپرٹی کی مکمل معلومات، وزٹ اور ڈیل کے لیے آج ہی رابطہ کریں۔ صاف، شفاف اور پروفیشنل ڈیلنگ — آپ کی پراپرٹی، ہماری ذمہ داری!",
     description:
       "A beautiful, spacious and impressive bungalow in Mehran Society, Sukkur — built for a large family. 400 sq yd plot with 9 bedrooms, a drawing room, two TV lounges, two kitchens and car parking. سکھر میں بڑی فیملی کے لیے خوبصورت، کشادہ اور شاندار بنگلہ فروخت کے لیے دستیاب ہے۔ صرف Serious Buyers رابطہ کریں۔ Call 0313-5974923 for full details, a visit and the deal.",
   },

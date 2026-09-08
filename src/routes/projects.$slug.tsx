@@ -86,6 +86,28 @@ function ProjectDetail() {
                   </li>
                 ))}
               </ul>
+
+              {l.featuresUrdu ? (
+                <div dir="rtl" className="mt-10 rounded-3xl border border-primary/30 bg-primary/5 p-7">
+                  <h3 className="text-lg font-bold text-primary">تفصیل اردو میں</h3>
+                  {l.descriptionUrdu ? (
+                    <p className="mt-3 text-sm leading-loose text-muted-foreground sm:text-base">
+                      {l.descriptionUrdu}
+                    </p>
+                  ) : null}
+                  <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                    {l.featuresUrdu.map((f) => (
+                      <li key={f} className="flex items-start gap-2 text-sm font-semibold sm:text-base">
+                        <Check className="mt-1 size-4 shrink-0 text-primary" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-5 text-sm font-bold text-primary sm:text-base">
+                    📞 رابطہ کریں: Zain Real Estate — {site.phone}
+                  </p>
+                </div>
+              ) : null}
             </div>
             <div>
               <div className="sticky top-28 rounded-3xl border border-primary/30 bg-card/60 p-7">
