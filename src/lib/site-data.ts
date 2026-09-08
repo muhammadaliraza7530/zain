@@ -194,3 +194,104 @@ export const galleryImages = [
   img.completedVilla,
   img.brickFront,
 ];
+
+export type Listing = {
+  slug: string;
+  title: string;
+  type: "Plot" | "House" | "Shop" | "Commercial";
+  purpose: "Sale" | "Rent" | "Booking";
+  location: string;
+  area: string;
+  price: string;
+  image: string;
+  gallery: string[];
+  features: string[];
+  description: string;
+};
+
+export const listings: Listing[] = [
+  {
+    slug: "dms-residential-plot",
+    title: "Residential Plot — Delhi Muslim Society",
+    type: "Plot",
+    purpose: "Sale",
+    location: "Delhi Muslim Society, Sukkur",
+    area: "120 sq yd",
+    price: "On request",
+    image: img.modernVilla,
+    gallery: [img.modernVilla, img.brickFront, img.greyClassic],
+    features: ["Clear title, transfer-ready", "Near Sukkur IBA University", "Water, gas and electricity available", "Wide carpeted road"],
+    description:
+      "A well-located residential plot in Delhi Muslim Society, ideal for building a family home. Walking distance from Sukkur IBA University with all utilities available at the doorstep.",
+  },
+  {
+    slug: "double-storey-house-dms",
+    title: "Double Storey House — Near IBA University",
+    type: "House",
+    purpose: "Sale",
+    location: "Delhi Muslim Society, Sukkur",
+    area: "240 sq yd",
+    price: "On request",
+    image: img.luxuryHouse,
+    gallery: [img.luxuryHouse, img.courtyard, img.luxuryVilla],
+    features: ["5 bedrooms with attached baths", "2 kitchens and 2 TV lounges", "Car porch and rooftop terrace", "Full documentation support"],
+    description:
+      "A spacious double-storey family house near Sukkur IBA University. Solid construction, bright rooms and a peaceful street — ready to move in.",
+  },
+  {
+    slug: "commercial-shop-100ft-road",
+    title: "Commercial Shop — 100 Ft Road",
+    type: "Shop",
+    purpose: "Sale",
+    location: "100 Ft Road, Sukkur",
+    area: "180 sq ft",
+    price: "On request",
+    image: img.brickFront,
+    gallery: [img.brickFront, img.greyClassic, img.modernVilla],
+    features: ["Prime commercial location", "High footfall market area", "Suitable for retail or office", "Registry-ready documents"],
+    description:
+      "A commercial shop on Sukkur's busy 100 Ft Road — an excellent investment for rental income or your own business.",
+  },
+  {
+    slug: "family-house-rent-iba",
+    title: "Family House on Rent — IBA Area",
+    type: "House",
+    purpose: "Rent",
+    location: "Near Sukkur IBA University",
+    area: "160 sq yd",
+    price: "On request",
+    image: img.greyClassic,
+    gallery: [img.greyClassic, img.completedVilla, img.courtyard],
+    features: ["3 bedrooms, drawing and dining", "Separate entrance", "Ideal for faculty and families", "Immediate possession"],
+    description:
+      "A clean, well-maintained house on rent near Sukkur IBA University. Perfect for faculty members, students' families and professionals.",
+  },
+  {
+    slug: "new-society-booking",
+    title: "New Project Booking — Residential Plots",
+    type: "Plot",
+    purpose: "Booking",
+    location: "Sukkur",
+    area: "80 to 240 sq yd",
+    price: "Easy instalments",
+    image: img.spanishVilla,
+    gallery: [img.spanishVilla, img.classicMansion, img.luxuryVilla],
+    features: ["Priority booking at launch rates", "Easy instalment plans", "Gated and planned community", "Full booking-to-registry support"],
+    description:
+      "Priority booking of residential plots in Sukkur's best upcoming housing projects. Book at launch rates with flexible instalment plans through Zain Real Estate.",
+  },
+  {
+    slug: "commercial-building-sukkur",
+    title: "Commercial Building — Investment Opportunity",
+    type: "Commercial",
+    purpose: "Sale",
+    location: "Sukkur City",
+    area: "Multi-floor",
+    price: "On request",
+    image: img.classicMansion,
+    gallery: [img.classicMansion, img.completedVilla, img.luxuryHouse],
+    features: ["Strong rental yield", "Multiple shops and offices", "Main road frontage", "Verified ownership documents"],
+    description:
+      "A complete commercial building in Sukkur city for serious investors. Multiple rented units with a strong monthly income stream.",
+  },
+];

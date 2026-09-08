@@ -15,6 +15,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GlowLayer } from "@/components/GlowLayer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { Toaster } from "@/components/ui/sonner";
 
 
 
@@ -142,6 +143,7 @@ function RootComponent() {
         </main>
         <Footer />
         <WhatsAppFloat />
+        <Toaster />
       </div>
     </QueryClientProvider>
   );
