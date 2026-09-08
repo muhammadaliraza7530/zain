@@ -5,6 +5,8 @@ import {
   about,
   heroSlides,
   highlights,
+  listings,
+  partyDeal,
   process,
   services,
   showreelUrl,
@@ -127,6 +129,8 @@ function Hero() {
 }
 
 function HomePage() {
+  const featured = listings.find((l) => l.slug === "bungalow-mehran-society");
+
   return (
     <>
       <Hero />
@@ -189,6 +193,85 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+
+      {/* Party-to-party deal */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+          <Reveal>
+            <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-primary sm:text-xs">
+              {partyDeal.eyebrow}
+            </p>
+            <h2 dir="rtl" className="mt-4 text-2xl font-extrabold leading-snug sm:text-3xl">
+              {partyDeal.titleUrdu}
+            </h2>
+            <p className="mt-3 text-sm font-semibold text-muted-foreground sm:text-base">{partyDeal.title}</p>
+            <p dir="rtl" className="mt-5 text-sm leading-loose text-muted-foreground sm:text-base">
+              {partyDeal.introUrdu}
+            </p>
+            <ul className="mt-8 space-y-4">
+              {partyDeal.points.map((p) => (
+                <li key={p.en} className="flex items-start gap-3">
+                  <span aria-hidden className="text-lg leading-none">
+                    {p.icon}
+                  </span>
+                  <span>
+                    <span dir="rtl" className="block text-sm font-semibold sm:text-base">
+                      {p.urdu}
+                    </span>
+                    <span className="mt-1 block text-xs text-muted-foreground sm:text-sm">{p.en}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={site.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-shake sheen-on-hover mt-9 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-xs font-bold uppercase tracking-[0.18em] text-primary-foreground transition-colors hover:bg-accent"
+            >
+              WhatsApp {site.phone}
+            </a>
+          </Reveal>
+
+          {/* Featured bungalow */}
+          {featured ? (
+            <Reveal delay={120}>
+              <Link
+                to="/projects/$slug"
+                params={{ slug: featured.slug }}
+                className="lit-panel group block overflow-hidden bg-card"
+              >
+                <div className="relative aspect-4/3 overflow-hidden">
+                  <img
+                    src={featured.image}
+                    alt={featured.title}
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <span className="absolute left-4 top-4 rounded-full bg-primary px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-primary-foreground">
+                    House For Sale
+                  </span>
+                </div>
+                <div className="p-6 sm:p-7">
+                  <h3 className="text-lg font-bold sm:text-xl">{featured.title}</h3>
+                  <p className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <MapPin className="size-4 shrink-0 text-primary" />
+                    {featured.location} · {featured.area}
+                  </p>
+                  <p className="mt-4 text-base font-extrabold text-primary">{featured.price}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    9 bedrooms · 1 drawing room · 2 TV lounges · 2 kitchens · car parking. Ideal for a large family.
+                  </p>
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-primary">
+                    View full details <ArrowRight className="size-3.5" />
+                  </span>
+                </div>
+              </Link>
+            </Reveal>
+          ) : null}
+        </div>
+      </section>
+
 
       {/* Services */}
       <section className="py-20 lg:py-28">

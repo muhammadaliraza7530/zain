@@ -88,8 +88,29 @@ export const about = {
     "Zain Real Estate is a leading real estate consultancy and marketing firm based in Sukkur.",
     "Led by Hizb Ullah Abro, we specialize in New Projects Booking, Sale, Purchase & Rent of all kinds of residential and commercial property.",
     "With deep local market knowledge and a commitment to transparency, we help buyers, sellers, and investors make the right property decisions.",
+    "Our work began with a simple belief: property dealing in Sukkur should be straightforward. No hidden commissions, no exaggerated rates and no paperwork surprises after the deal is signed. That belief still guides every file we open.",
+    "Today we work across Delhi Muslim Society, the Sukkur IBA University belt, 100 Ft Road, Mehran Society, Airport Road and the new housing schemes on the city's edge — covering plots, houses, flats, shops, offices and full commercial buildings.",
+    "We deal party to party wherever possible, so the buyer and the seller sit at the same table, see the same documents and agree on the same figure. That is the shortest route to a clean, honest deal.",
   ],
 };
+
+/** Party-to-party promise, shown in Urdu and English. */
+export const partyDeal = {
+  eyebrow: "Party-to-Party Deal",
+  titleUrdu: "سکھر میں Property Sale & Purchase؟",
+  title: "Buying or selling property in Sukkur?",
+  introUrdu:
+    "اگر کسی دوست کو سکھر میں پراپرٹی خریدنی یا فروخت کرنی ہو تو ہم سے رابطہ کریں۔ آپ کی پراپرٹی، ہماری ذمہ داری!",
+  intro:
+    "If you or a friend needs to buy or sell property in Sukkur, talk to us first. Your property is our responsibility.",
+  points: [
+    { icon: "🤝", urdu: "صاف، شفاف اور اعتماد کے ساتھ ڈیل", en: "Clear, transparent dealing built on trust" },
+    { icon: "📍", urdu: "مناسب پراپرٹی اور بہتر مواقع", en: "The right property and better opportunities" },
+    { icon: "💼", urdu: "Party-to-Party Deal", en: "Direct party-to-party deals, no middle chain" },
+    { icon: "📞", urdu: "رابطہ کریں: 0313-5974923", en: "Call or WhatsApp us: 0313-5974923" },
+  ],
+};
+
 
 export const services = [
   {
@@ -210,6 +231,28 @@ export type Listing = {
 };
 
 export const listings: Listing[] = [
+  {
+    slug: "bungalow-mehran-society",
+    title: "Bungalow For Sale — Mehran Society",
+    type: "House",
+    purpose: "Sale",
+    location: "Mehran Society, Sukkur",
+    area: "400 sq yd",
+    price: "Demand: 7 Crore",
+    image: img.courtyard,
+    gallery: [img.courtyard, img.luxuryHouse, img.completedVilla],
+    features: [
+      "Plot size 400 sq yd",
+      "9 bedrooms",
+      "1 drawing room + 2 TV lounges",
+      "2 kitchens",
+      "Car parking",
+      "Spacious residential property, ideal for a large family",
+      "Demand: 7 Crore — serious buyers only",
+    ],
+    description:
+      "A beautiful, spacious and impressive bungalow in Mehran Society, Sukkur — built for a large family. 400 sq yd plot with 9 bedrooms, a drawing room, two TV lounges, two kitchens and car parking. سکھر میں بڑی فیملی کے لیے خوبصورت، کشادہ اور شاندار بنگلہ فروخت کے لیے دستیاب ہے۔ صرف Serious Buyers رابطہ کریں۔ Call 0313-5974923 for full details, a visit and the deal.",
+  },
   {
     slug: "dms-residential-plot",
     title: "Residential Plot — Delhi Muslim Society",
