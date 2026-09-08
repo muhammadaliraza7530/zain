@@ -2,11 +2,14 @@
  * Single source of truth for all site content — ZAIN REAL ESTATE, Sukkur.
  */
 
+<<<<<<< Updated upstream
 import bungalowMehran from "@/assets/bungalow-mehran.jpg.asset.json";
 
 export { bungalowMehran };
 
 
+=======
+>>>>>>> Stashed changes
 export const img = {
   logo: "/zain-logo.png",
 
@@ -102,12 +105,12 @@ export const about = {
 /** Party-to-party promise, shown in Urdu and English. */
 export const partyDeal = {
   eyebrow: "Party-to-Party Deal",
-  titleUrdu: "سکھر میں Property Sale & Purchase؟",
-  title: "Buying or selling property in Sukkur?",
+  titleUrdu: "سکھر میں پراپرٹی خریدنا یا فروخت کرنا ہے؟",
+  title: "Do you want to buy, sell, or purchase property in Sukkur?",
   introUrdu:
-    "اگر کسی دوست کو سکھر میں پراپرٹی خریدنی یا فروخت کرنی ہو تو ہم سے رابطہ کریں۔ آپ کی پراپرٹی، ہماری ذمہ داری!",
+    "اگر آپ سکھر میں پراپرٹی خریدنا یا فروخت کرنا چاہتے ہیں تو ہم سے رابطہ کریں۔ آپ کی پراپرٹی، ہماری ذمہ داری!",
   intro:
-    "If you or a friend needs to buy or sell property in Sukkur, talk to us first. Your property is our responsibility.",
+    "If you want to buy or sell property in Sukkur, talk to us first. Your property is our responsibility.",
   closingUrdu: "آپ کی پراپرٹی، ہماری ذمہ داری!",
   dealingUrdu: "صاف، شفاف اور پروفیشنل ڈیلنگ",
   points: [
@@ -169,12 +172,46 @@ export const whyChooseUs = [
   },
 ];
 
+<<<<<<< Updated upstream
 /** Branded social posts — shown full-frame, never cropped. */
 export const posts = [
   { image: "/posts/post-1.jpeg", title: "Buy · Sell · Invest · Consult", location: "Sukkur, Pakistan", tag: "Zain Real Estate" },
   { image: "/posts/post-2.jpeg", title: "Double Storey House For Sale", location: "Near Main Road, Sukkur", tag: "For Sale" },
   { image: "/posts/post-3.jpeg", title: "Plot For Sale — CMT2 Sukkur", location: "CMT2, Sukkur", tag: "For Sale" },
 ];
+=======
+/** Branded social posts — all assets live in the public /posts folder. */
+export const posts = Array.from({ length: 18 }, (_, index) => {
+  const number = index + 1;
+  const titles = [
+    "Buy · Sell · Invest · Consult",
+    "Double Storey House For Sale",
+    "Plot For Sale — CMT2 Sukkur",
+    "Luxury Villa For Sale",
+    "New Plot Launch",
+    "Commercial Property",
+    "Prime Investment Deal",
+    "Dream Home Property",
+    "Beautiful Family Home",
+    "Modern Living",
+    "Commercial Shop Opportunity",
+    "Fresh Market Update",
+    "Buy Today, Invest Tomorrow",
+    "Property Open House",
+    "Luxury Living Showcase",
+    "Prime Location Deal",
+    "New Listing Alert",
+    "Value Property Opportunity",
+  ];
+
+  return {
+    image: `/posts/post-${number}.jpeg`,
+    title: titles[index] ?? `Property Update ${number}`,
+    location: "Sukkur, Pakistan",
+    tag: index < 3 ? "Zain Real Estate" : index < 8 ? "For Sale" : "Latest Update",
+  };
+});
+>>>>>>> Stashed changes
 
 
 export const testimonials = [
@@ -248,8 +285,8 @@ export const listings: Listing[] = [
     location: "Mehran Society, Sukkur",
     area: "400 sq yd",
     price: "Demand: 7 Crore",
-    image: bungalowMehran.url,
-    gallery: [bungalowMehran.url, img.courtyard, img.luxuryHouse, img.completedVilla],
+    image: img.luxuryHouse,
+    gallery: [img.luxuryHouse, img.courtyard, img.modernVilla, img.completedVilla],
     features: [
       "Plot size 400 sq yd",
       "9 bedrooms",
